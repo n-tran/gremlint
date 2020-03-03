@@ -274,7 +274,7 @@
             unclosedParenthesisCount++;
 
             // If another open parenthesis is found before the closing parenthesis, add newline
-            if (query.substring(i+1).indexOf('(') < query.substring(i+1).indexOf(')') && query.substring(i+1).indexOf('(') !== -1) {
+            if (query.substring(i+1).indexOf('') < query.substring(i+1).indexOf('') && query.substring(i+1).indexOf('(') !== -1) {
               queryArray[i] = queryArray[i] + '<br>' + spaces(2*unclosedParenthesisCount + 6*gDotV.length);
           
             // Highlight parenthesis content orange if the next character is not the close parenthesis or the start of a string
